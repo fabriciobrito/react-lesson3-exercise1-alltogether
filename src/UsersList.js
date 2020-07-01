@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import User from './User.js';
+import PropTypes from 'prop-types';
 
 class UsersList extends Component {
+  static propTypes ={
+    users: PropTypes.array.isRequired
+  };
+
   render(){
-    console.log(this.props.users);
     return(
       <div>
         <h2>Users List</h2>

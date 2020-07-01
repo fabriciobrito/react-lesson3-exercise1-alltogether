@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import InputValue from './InputValue';
+import PropTypes from 'prop-types';
 
 class AddUser extends Component {
+  static propTypes = {
+    handleAddUser: PropTypes.func.isRequired
+  };
+
   state = {
     firstname: '',
     lastname: '',

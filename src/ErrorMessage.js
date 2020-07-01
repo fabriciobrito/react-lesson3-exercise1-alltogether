@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const ErrorMessage = (props) => {
   return(
@@ -8,6 +9,10 @@ const ErrorMessage = (props) => {
       )}
     </div>
   );
+}
+
+ErrorMessage.Proptypes = {
+  username: PropTypes.string.isRequired
 }
 
 export default ErrorMessage;
